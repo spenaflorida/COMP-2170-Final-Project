@@ -1,0 +1,26 @@
+.Logo {
+    width: auto;
+    height: 5rem;
+    align-items: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: left;
+    background-color: #4D5382;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.Banner {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
