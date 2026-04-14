@@ -1,3 +1,7 @@
+html {
+    background-color: #BFCDE0;
+}
+
 .Logo {
     width: 5rem;
     height: 5rem;
@@ -25,4 +29,14 @@ h1 {
     height: 15rem;
     object-fit: cover;
     object-position: center;
+}
+
+h2 {
+    color: #090446;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #090446;
+    font-size: 1rem;
 }
