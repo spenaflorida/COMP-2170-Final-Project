@@ -1,5 +1,5 @@
 .Logo {
-    width: auto;
+    width: 5rem;
     height: 5rem;
     align-items: left;
     margin-top: 1rem;
@@ -10,7 +10,8 @@
 
 .header {
     display: flex;
-    align-items: left;
+    align-items: center;
+    gap: 1rem;
     background-color: #4D5382;
 }
 
@@ -21,6 +22,7 @@ h1 {
 
 .Banner {
     width: 100%;
-    height: auto;
-    align-items: center;
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
 }
