@@ -56,7 +56,7 @@ p {
     margin-right: 0;
 }
 
-.APIButton {
+#APIButton {
     background-color: #C2A83E;
     color: white;
     border: none;
@@ -64,6 +64,14 @@ p {
     padding: 3rem;
     font-size: 1rem;
     cursor: pointer;
+    height: 15rem;
+    width: 20rem;
+}
+
+.Alignment {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
 }
 
 .Search {
