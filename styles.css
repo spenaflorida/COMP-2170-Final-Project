@@ -58,14 +58,34 @@ p {
 
 #APIButton {
     background-color: #C2A83E;
-    color: white;
-    border: none;
     border-radius: 5rem;
     padding: 3rem;
     font-size: 1rem;
     cursor: pointer;
     height: 15rem;
     width: 20rem;
+}
+
+#fruitButtons {
+    padding: 0.5rem;
+}
+
+#getFruit {
+    background-color: #C2A83E;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+#removeFruit {
+    background-color: #C2A83E;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    cursor: pointer;
 }
 
 .Alignment {

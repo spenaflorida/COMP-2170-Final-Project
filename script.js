@@ -1,5 +1,7 @@
 const button = document.getElementById("APIButton");
 const status = document.getElementById("status");
+const button = document.getElementById("getFruit");
+const button = document.getElementById("removeFruit");
 
 
 button.addEventListener("click", function () {
