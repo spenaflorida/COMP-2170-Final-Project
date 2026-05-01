@@ -65,3 +65,25 @@ p {
     font-size: 1rem;
     cursor: pointer;
 }
+
+.Search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #4D5382; 
+    padding: 1rem;
+    justify-content: center;
+}
+
+.Search p {
+    color: white;
+    font-size: 1rem;
+}
+
+#searchBar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #090446;
+    padding: 1rem;
+}
