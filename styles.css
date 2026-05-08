@@ -185,3 +185,15 @@ h1 {
     border-radius: 0.5rem;
     border: none;
 }
+
+@media (max-width: 900px) {
+    .Alignment {
+        flex-direction: column;
+    }
+
+    .API {
+        width: 100%;
+        max-width: 35rem;
+        align-self: center;
+    }
+}

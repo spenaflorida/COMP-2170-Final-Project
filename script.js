@@ -3,6 +3,9 @@ const getFruitButton = document.getElementById("getFruit");
 const removeFruitButton = document.getElementById("removeFruit");
 const searchButton = document.getElementById("searchButton");
 const fruitSearch = document.getElementById("fruitSearch");
+const menuButton = document.getElementById("menuButton");
+const sideMenu = document.getElementById("sideMenu");
+const closeMenu = document.getElementById("closeMenu");
 
 // SAVE TO LOCAL STORAGE
 function saveFruit(fruit) {
