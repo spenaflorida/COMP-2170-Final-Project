@@ -4,6 +4,21 @@ const removeFruitButton = document.getElementById("removeFruit");
 const searchButton = document.getElementById("searchButton");
 const fruitSearch = document.getElementById("fruitSearch");
 
+// SAVE TO LOCAL STORAGE
+function saveFruit(fruit) {
+    localStorage.setItem("lastFruit", JSON.stringify(fruit));
+}
+
+// LOAD FROM LOCAL STORAGE ON PAGE START
+window.addEventListener("load", function () {
+    const savedFruit = localStorage.getItem("lastFruit");
+    if (savedFruit) {
+        const fruit = JSON.parse(savedFruit);
+        displayFruit(fruit);
+    }
+});
+
+
 // GET RANDOM FRUIT
 async function getRandomFruit() {
     status.textContent = "Getting Devil Fruit...";
@@ -23,13 +38,15 @@ async function getRandomFruit() {
     }
 }
 
-// DISPLAY FUNCTION (TEXT ONLY)
+// DISPLAY FUNCTION (TEXT ONLY + SAVE)
 function displayFruit(fruit) {
     status.innerHTML = `
         <strong>${fruit.name}</strong><br><br>
         Type: ${fruit.type}<br><br>
         Description: ${fruit.description}
     `;
+    // SAVE LAST VIEWED FRUIT
+    saveFruit(fruit);
 }
 
 // REMOVE
@@ -37,6 +54,8 @@ function removeFruit() {
     status.textContent =
         "Devil Fruit will appear here.";
     fruitSearch.value = "";
+    // CLEAR STORAGE
+    localStorage.removeItem("lastFruit");
 }
 
 // SEARCH
@@ -74,5 +93,5 @@ async function searchFruit() {
 
 // EVENTS
 getFruitButton.addEventListener("click", getRandomFruit);
-removeFruitButton.addEventListener("click",removeFruit);
-searchButton.addEventListener("click",searchFruit);
+removeFruitButton.addEventListener("click", removeFruit);
+searchButton.addEventListener("click", searchFruit);
