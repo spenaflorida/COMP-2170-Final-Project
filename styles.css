@@ -8,6 +8,78 @@ body {
     color: #090446;
 }
 
+/* OVERLAY */
+body.menu-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 998;
+}
+
+/* MENU BUTTON */
+.menu-button {
+    position: fixed;
+    right: 1rem;
+    top:1rem;
+    background-color: #C2A83E;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* SIDE MENU */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100vh;
+    background-color: #0b0b2f;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    transform: translateX(100%);
+    transition: transform 0.35s ease;
+    z-index: 999;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.4);
+}
+
+/* OPEN STATE */
+.side-menu.open {
+    transform: translateX(0);
+}
+
+/* CLOSE BUTTON */
+.close-button {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* LINKS */
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    transition: background 0.2s ease;
+}
+
+.side-menu a:hover {
+    background-color: #C2A83E;
+    color: #090446;
+}
+
 /* HEADER */
 .header {
     display: flex;

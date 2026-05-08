@@ -95,3 +95,14 @@ async function searchFruit() {
 getFruitButton.addEventListener("click", getRandomFruit);
 removeFruitButton.addEventListener("click", removeFruit);
 searchButton.addEventListener("click", searchFruit);
+
+// NAV EVENTS
+menuButton.addEventListener("click", () => {
+    sideMenu.classList.add("open");
+    document.body.classList.add("menu-open");
+});
+
+closeMenu.addEventListener("click", () => {
+    sideMenu.classList.remove("open");
+    document.body.classList.remove("menu-open");
+});
