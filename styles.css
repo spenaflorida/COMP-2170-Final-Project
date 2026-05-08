@@ -2,21 +2,25 @@ html {
     background-color: #BFCDE0;
 }
 
-.Logo {
-    width: 5rem;
-    height: 5rem;
-    align-items: left;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #090446;
 }
 
+/* HEADER */
 .header {
     display: flex;
     align-items: center;
     gap: 1rem;
     background-color: #4D5382;
+    padding: 0.5rem;
+}
+
+.Logo {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
 }
 
 h1 {
@@ -28,84 +32,67 @@ h1 {
     width: 100%;
     height: 15rem;
     object-fit: cover;
-    object-position: center;
 }
 
-h2 {
-    color: #090446;
-    font-size: 1.5rem;
+/* LAYOUT */
+.Alignment {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: flex-start;
 }
 
-p {
-    color: #090446;
-    font-size: 1rem;
+.About {
+    flex: 1;
 }
 
+/* API BOX (TEXT ONLY) */
 .API {
     border: 0.5rem solid #4D5382;
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: white;
+    width: 35rem;
+    min-height: 20rem;
     text-align: center;
-    font-weight: bold;
-    width: 20rem;
-    height: 20rem;
-    justify-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
 }
 
-#APIButton {
-    background-color: #C2A83E;
-    border-radius: 5rem;
-    padding: 3rem;
-    font-size: 1rem;
-    cursor: pointer;
-    height: 15rem;
-    width: 20rem;
+/* STATUS TEXT */
+#status {
+    font-size: 1.1rem;
+    color: #090446;
 }
 
+/* BUTTONS */
 #fruitButtons {
-    padding: 0.5rem;
-}
-
-#getFruit {
-    background-color: #C2A83E;
-    color: white;
-    border: none;
-    border-radius: 5rem;
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-#removeFruit {
-    background-color: #C2A83E;
-    color: white;
-    border: none;
-    border-radius: 5rem;
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-.Alignment {
+    margin-top: 1rem;
     display: flex;
-    align-items: center;
-    padding: 1rem;
+    justify-content: center;
+    gap: 1rem;
 }
 
+#getFruit,
+#removeFruit,
+#searchBar button {
+    background-color: #C2A83E;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+}
+
+/* TYPES SECTION */
+.Types {
+    padding: 2rem;
+}
+
+/* SEARCH */
 .Search {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    background-color: #4D5382; 
-    padding: 1rem;
     justify-content: center;
-}
-
-.Search p {
-    color: white;
-    font-size: 1rem;
+    background-color: #4D5382;
+    padding: 1.5rem;
 }
 
 #searchBar {
@@ -114,4 +101,15 @@ p {
     gap: 1rem;
     background-color: #090446;
     padding: 1rem;
+    border-radius: 1rem;
+}
+
+.Search p {
+    color: white;
+}
+
+#fruitSearch {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
 }
